@@ -1,38 +1,59 @@
+/* App.css */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  padding: 20px;
+  color: white;
+}
+
+.upload-container {
+  padding: 20px;
+}
+
+/* Estilos para el Login */
+.login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh; /* Altura completa de la ventana */
+  background-color: #f4f4f4; /* Color de fondo */
 }
 
-.App-link {
-  color: #61dafb;
+.login-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Ancho del formulario */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-form h2 {
+  margin-bottom: 20px; /* Espaciado inferior */
 }
+
+.login-form input {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  margin: 10px 0; /* Espaciado vertical */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 4px; /* Esquinas redondeadas */
+}
+
+.login-form button {
+  background-color: #28a745; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Esquinas redondeadas */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+}
+
+.login-form button:hover {
+  background-color: #218838; /* Color del botón al pasar el ratón */
+}
+
